@@ -1,0 +1,96 @@
+body {
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #f5eae1;
+    padding: 10px 0;
+    
+    display: flex;
+    align-items: center; /* Center items vertically within the header */
+    justify-content: space-between; /* Distribute items with space in between */
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    border: 9px solid #DEB;
+    border-radius: 30%;
+    max-width: 150px;
+    margin-right: 20px; /* Add margin for spacing between image and name */
+}
+
+h1 {
+    margin: 0; /* Remove default margin to prevent unwanted spacing */
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 10;
+    margin-right: 10px;
+    padding: 0;
+    text-align: right; /* Align the text to the right */
+}
+
+nav li {
+    display: inline;
+    margin-left: 20px; /* Adjust the spacing as needed */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    color: #333;
+}
+
+footer {
+    background-color: #f5eae1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        position: static;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+
+
