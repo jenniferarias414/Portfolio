@@ -9,6 +9,13 @@ body {
     position: relative;
 }
 
+.highlight-text {
+    color: #DEB;
+    font-size: 1.5rem;
+    -webkit-text-stroke: 0.5px #333; /* For WebKit (Chrome, Safari) */
+    text-stroke: 0.5px #333; /* Standard property */
+}
+
 section::before {
     /* Overlay with background image */
     content: '';
@@ -27,7 +34,7 @@ section::before {
 
 /* Adjust the background color of sections for better readability */
 section {
-    background-color: rgba(255, 255, 255, 0.6); /* Adjust the RGBA values and opacity as needed */
+    background-color: rgba(255, 255, 255, 0.6); 
 }
 
 
@@ -42,8 +49,8 @@ header {
     padding: 10px 0;
     
     display: flex;
-    align-items: center; /* Center items vertically within the header */
-    justify-content: space-between; /* Distribute items with space in between */
+    align-items: center; 
+    justify-content: space-between; 
 }
 
 .profile {
@@ -53,13 +60,14 @@ header {
 
 .profile img {
     border: 9px solid #DEB;
+    box-shadow: 0 0 0 1px #333;
     border-radius: 30%;
     max-width: 150px;
     margin-right: 20px; /* Add margin for spacing between image and name */
 }
 
 h1 {
-    margin: 0; /* Remove default margin to prevent unwanted spacing */
+    margin: 0; 
 }
 
 nav {
@@ -102,13 +110,14 @@ section h2 {
 #contact .social-icons {
     display: flex;
     align-items: center;
-    margin-top: 30px; /* Adjust spacing between email and social icons */
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #contact .social-icons a {
     color: #333;
     margin-right: 65px; /* Adjust spacing between icons */
-    font-size: 1.5rem; /* Adjust icon size as needed */
+    font-size: 2.5rem; /* Adjust icon size as needed */
 }
 
 /* Tooltip Styles */
@@ -124,11 +133,13 @@ section h2 {
     left: 50%;
     transform: translateX(-50%);
     padding: 8px;
-    background-color: #333;
-    color: #fff;
+    background-color: #DEB;
+    color: #333;
+    border: 1px solid #333;
     border-radius: 4px;
     white-space: nowrap;
     opacity: 0;
+    font-size: 1rem;
     transition: opacity 0.2s;
     z-index: 1;
 }
