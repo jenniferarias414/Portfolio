@@ -51,6 +51,7 @@ header {
     display: flex;
     align-items: center; 
     justify-content: space-between; 
+    margin-bottom: 20px;
 }
 
 .profile {
@@ -60,10 +61,12 @@ header {
 
 .profile img {
     border: 9px solid #DEB;
-    box-shadow: 0 0 0 1px #333;
+    /* border-image: linear-gradient(to right, #DEB, #333); */
+    box-shadow: 0 0 19px rgba(0, 0, 0, 0.8);
+    /* box-shadow: 0 0 0 1px #333; */
     border-radius: 30%;
     max-width: 150px;
-    margin-right: 20px; /* Add margin for spacing between image and name */
+    margin-right: 35px; /* Add margin for spacing between image and name */
 }
 
 h1 {
@@ -99,9 +102,46 @@ section {
     padding: 60px 0;
 }
 
+
 section h2 {
     color: #333;
 }
+
+.skills-section {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: left;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.skills-icons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 2.5rem; /* Adjust icon size as needed */
+    color: #333; /* Adjust icon color */
+}
+
+.skill-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-icon i {
+    margin-bottom: 10px; /* Adjust the space between the icon and the skill name */
+}
+
+.skill-icon p {
+    margin: 0;
+    font-size: 1rem; /* Adjust the font size of the skill name */
+    color: #333; /* Adjust the color of the skill name */
+}
+
 
 #contact {
     padding: 90px 0; /* Adjust padding as needed */
@@ -183,6 +223,17 @@ footer {
     nav li {
         display: block;
         margin: 10px 0;
+    }
+
+    .skills-icons-container {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .skill-icon {
+        text-align: center;
+        width: 45%; /* Adjust as needed based on your design */
+        margin-bottom: 20px; /* Adjust as needed for spacing */
     }
 }
 
