@@ -18,6 +18,12 @@
 
     <script src="https://kit.fontawesome.com/a57dbec398.js" crossorigin="anonymous"></script>
 
+    <script>
+        function toggleDetails(header) {
+            var details = header.nextElementSibling;
+            details.classList.toggle('active');
+        }
+    </script>
 
     <title>Jenny Arias - Portfolio</title>
 </head>
@@ -98,24 +104,34 @@
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
-            <div class="projects">
-                <h3>EZ-EMR</h3>
-                <p><a href="https://github.com/jenniferarias414/EZEMR">GitHub Repo</a></p>
-                <p>In the initial stages of my Devmountain web development journey, I conceptualized and developed EZ-EMR—a robust Electronic Medical Records (EMR) system. This full-stack application significantly optimizes healthcare professionals' daily tasks through secure user authentication, seamless patient management, and responsive design. Employing HTML, CSS, and JavaScript on the front-end, and backed by Node.js and Express, EZ-EMR underscores my foundational skills. Notably, the system integrates with a PostgreSQL database, enhancing the login feature by executing SQL queries for secure and authenticated access.</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/lNv6AL4PeAs?si=lHQhYbPcQMxs43nF"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-            </div>
-
-            <div class="projects">
-                <h3>React Movie Watchlist</h3>
-                <p><a href="https://github.com/jenniferarias414/movie-watchlist">GitHub Repo</a></p>
-                <p>In this React movie watchlist project, the users can seamlessly explore, add, and manage movies. The dynamic features showcase movie titles and posters pulled from an external movie database via API requests and a personalized watchlist, providing an immersive cinematic experience. Leveraging React's useState, useEffect, and reusable components, the user's journey is efficient and enjoyable.</p>
-                <div>
-                    <!-- //some type of gif for this project -->
+            <div class="project-card">
+                <div class="project-header" onclick="toggleDetails(this)">
+                    <h3>EZ-EMR</h3>
+                </div>
+                <div class="project-details">
+                    <p><a href="https://github.com/jenniferarias414/EZEMR">GitHub Repo</a></p>
+                    <p>In the initial stages of my Devmountain web development journey, I conceptualized and developed EZ-EMR—a robust Electronic Medical Records (EMR) system. This full-stack application significantly optimizes healthcare professionals' daily tasks through secure user authentication, seamless patient management, and responsive design. Employing HTML, CSS, and JavaScript on the front-end, and backed by Node.js and Express, EZ-EMR underscores my foundational skills. Notably, the system integrates with a PostgreSQL database, enhancing the login feature by executing SQL queries for secure and authenticated access.</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lNv6AL4PeAs?si=lHQhYbPcQMxs43nF"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
             </div>
+            
+
+            <div class="project-card">
+                <div class="project-header" onclick="toggleDetails(this)">
+                    <h3>React Movie Watchlist</h3>
+                </div>
+                <div class="project-details">
+                    <p><a href="https://github.com/jenniferarias414/movie-watchlist">GitHub Repo</a></p>
+                    <p>In this React movie watchlist project, the users can seamlessly explore, add, and manage movies. The dynamic features showcase movie titles and posters pulled from an external movie database via API requests and a personalized watchlist, providing an immersive cinematic experience. Leveraging React's useState, useEffect, and reusable components, the user's journey is efficient and enjoyable.</p>
+                    <div>
+                        <img src="./images/Movie Watchlist.gif" alt="Movie Watchlist gif">
+                    </div>
+                </div>
+            </div>
+            
         </div>        
     </section>
 
@@ -139,5 +155,12 @@
             <p>&copy; 2024 Jenny Arias. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        function toggleDetails(header) {
+            var details = header.nextElementSibling;
+            details.classList.toggle('active');
+            header.classList.toggle('rotate-up');
+        }
+    </script>
 </body>
 </html>
