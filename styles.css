@@ -224,18 +224,18 @@ section h2 {
     color: #007bff; 
 }
 
-.projects iframe {
+.project-details iframe {
     /* width: 100%; */
     max-width: 100%;
     margin-top: 20px;
     border: 0; 
 }
 
-.projects img {
+/* .projects img {
     max-width: 100%;
     margin-top: 20px;
     width: 600px;
-}
+} */
 
 .project-details img {
     max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
@@ -258,7 +258,33 @@ section h2 {
     padding: 20px;
     border-bottom: 1px solid #ddd;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.project-header h3 {
+    margin: 0;
+    justify-content: center;
+}
+
+.icons {
+    display: flex;
+    margin-right: 60px;
+}
+
+.icons i {
+    font-size: 1.5rem;
+    margin-left: 25px; Adjust spacing between icons
+   
+}
+
+.arrow {
+    margin-left: 10px; /* Adjust spacing between icons and arrow */
+    width: 20px; /* Set width of the arrow */
+    height: 20px; /* Set height of the arrow */
+}
+
 
 .project-header:hover {
     background-color: rgba(245, 234, 225, 0.9);
